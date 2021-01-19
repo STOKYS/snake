@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <title>Snake</title>
     <link rel="stylesheet" href="css/default.css">
 </head>
+
 <body>
     <header></header>
     <main>
-        <div>
+        <div class="game">
             <canvas id="game" height="800" width="800"></canvas>
         </div>
-        <button id="start">START</button>
+        <div class="panel">
+            <div class="selection">
+                <h1>Snake</h1>
+            </div>
+            <div class="selection">
+                <div class="buttons">
+                    <p>Turn on if the game doesn't register you pressing keys (May be buggy)</p>
+                    <button id="hrm">High Response Mode: false</button>
+                </div>
+                <div class="buttons">
+                    <p>Move faster, needs better CPU (If your CPU is from 2000 or above you should be fine)</p>
+                    <button id="hsm">High Speed Mode: false</button>
+                </div>
+                <div class="buttons">
+                    <p>Walls kill you on impact</p>
+                    <button id="dw">Deadly walls: false</button>
+                </div>
+                <div class="buttons">
+                    <p>Snake moves smoothly</p>
+                    <button disabled>Smooth gameplay: false</button>
+                </div>
+                <div class="buttons-big">
+                    <p>Changes the looks of the snake</p>
+                    <button id="skin">
+                        Skin: smooth
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
 
@@ -20,4 +51,5 @@
     <script src="js/setup.js"></script>
     <script src="js/game.js"></script>
 </body>
+
 </html>
